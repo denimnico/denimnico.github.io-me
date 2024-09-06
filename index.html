@@ -17,17 +17,29 @@
             background: #333;
             color: #fff;
             padding: 20px;
+            text-align: center; /* Center content in the main-info section */
         }
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .r1, .intro,.fun-fact {
+        .main-info img {
+            display: block; /* Ensures the image behaves as a block-level element */
+            margin: auto;   /* Centers the image horizontally */
+        }
+        .hobbies, .r1, .intro, .fun-fact {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
-            ul {
-    list-style-type: square;
-  }
+        }
+        .hobbies ul {
+            list-style-type: square;
+        }
+        .r1 {
+            text-align: center; /* Center content in this section */
+        }
+        .r1 img {
+            display: block;
+            margin: auto; /* Centers the image */
         }
     </style>
 </head>
@@ -36,34 +48,33 @@
         <header class="main-info">
             <h1>Nicolas Paredes</h1>
             <h1>Preferred Name: Nico</h1>
-            <img src = "me_pic.jpg" alt = "Preferred Name: Nico" width="400" height="400">
+            <img src="me_pic.jpg" alt="Preferred Name: Nico" width="400" height="400">
         </header>
 
         <section class="r1">
-            <a href = "nicolasdparedes@lewisu.edu"> My email to contact me</a>
-			<h2>My discord name is denimnico</h2>
-            <img src = "discord.png"/>
+            <a href="mailto:nicolasdparedes@lewisu.edu">My email to contact me</a>
+            <h2>My discord name is denimnico</h2>
+            <img src="discord.png" alt="Discord Logo" />
         </section>
 
-		<section class="intro">
+        <section class="intro">
             <h2>Introduction</h2>
-            <p>My name is nico, I am a computer science major and I minor in CyberSecurity. I am the oldest of three brothers and 
-                I have a pet lab named stormy. 
+            <p>My name is Nico, I am a computer science major and I minor in CyberSecurity. I am the oldest of three brothers and 
+               I have a pet lab named Stormy. 
             </p>
-        </section>	
+        </section>    
 
         <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
             <ul>
                 <li>Playing basketball</li>
-            <li>spending time with freinds/family</li>
-
+                <li>Spending time with friends/family</li>
             </ul>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>A fun fact is that I dont like cheese</p>
+            <p>A fun fact is that I don't like cheese.</p>
         </section>
     </div>
 </body>
